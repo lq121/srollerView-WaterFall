@@ -1,0 +1,24 @@
+//
+//  LQPrefixHeader.pch
+//  waterFall
+//
+//  Created by leyi on 15/8/20.
+//  Copyright (c) 2015年 LQ. All rights reserved.
+//
+
+#ifndef waterFall_LQPrefixHeader_pch
+#define waterFall_LQPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// 颜色
+#define LQColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LQColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define LQRandomColor LQColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#import "UIView+Extension.h"
+
+#endif
